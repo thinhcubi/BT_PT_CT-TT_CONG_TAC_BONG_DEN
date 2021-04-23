@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="JS.js"></script>
+    <script src="ElectricLamp.js"></script>
+</head>
+<body>
+<script>
+    let electric1 = new ElectricLamp();
+    let switchButton = new SwitchButton();
+
+    switchButton.connectToLamp();
+    console.log(electric1.status);
+    switchButton.switchOn(electric1);
+    console.log(electric1.status);
+    switchButton.switchOff(electric1);
+    console.log(electric1.status);
+
+
+    // switchButton.switchOff(status)
+
+
+</script>
+
+</body>
+</html>
